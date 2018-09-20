@@ -4,14 +4,13 @@
 
 //Bonus 2: Make both numbers whole integers (aka round to the nearest integer) 
 
-function circleCalculation () {
-	var radius = parseInt(prompt("What is the radious of the circle?"));
-	var area = 3.14(radius^2);
-	return area;
-	var perimeter = 2(3.14)radius;
-	return perimeter;
+var radius = parseInt(prompt("What is the radious of the circle?"));
+function circleCalculation (r) {
+	var area = Math.round(Math.PI * Math.pow(r,2));
+	var perimeter = Math.round(2*Math.PI*r);
+	var sentence = "The area of the circle is " + area +" and the perimeter of the circle is "+ perimeter +".";
+	return sentence;
+}
 
-};
-console.log("The area of the circle is " + area +" and the perimeter of the circle is "+ perimeter);
-
-circleCalculation(10);
+var value = circleCalculation(radius);
+console.log(value);

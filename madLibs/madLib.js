@@ -28,8 +28,3 @@ $(document).ready(function(){
         console.log(userObject);
         });
     });
-
-    //adding stuff
-    function (){
-        //add plus
-    }

@@ -28,3 +28,7 @@ $(document).ready(function(){
         console.log(userObject);
         });
     });
+
+    function (){
+        
+    }

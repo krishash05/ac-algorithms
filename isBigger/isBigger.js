@@ -8,6 +8,8 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/type
 
 */
 
+
+
 /**
 Examples:
 
@@ -40,6 +42,25 @@ console.log(result) // -1
 
 
 function isBigger(a, b) {
-	//Your code here
+	//input two numbers
+
+	//check to see if number is bigger, equal etc
+	//conditional statement if a>b
+	var result = '';
+	if (typeof a === 'number' && typeof b === "number"){
+		if (a > b){
+			result = true;
+		} else if (a < b){
+			result = false;
+		} else if (a == b){
+			result = 0;
+		}
+	} else {
+		result = -1;
+	}
+	return result;
+};
+
 	
-}
+
+	//result

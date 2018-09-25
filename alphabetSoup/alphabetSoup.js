@@ -12,6 +12,9 @@ Hint: Check out trim() method at
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
 */
 
+
+
+
 /**
 Examples:
 
@@ -32,8 +35,13 @@ var result = alphabetSoup("my string oh my");
 console.log(result) // "ghimmnorstyy"
 
 **/
+//Input a word
+//
 
 function alphabetSoup(str) {
-	//Your code here
-	
+	var characters = str.split('').sort().join('').trim();
+	return characters;	
 }
+
+var result = alphabetSoup("hello");
+console.log(result)

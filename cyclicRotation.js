@@ -16,4 +16,15 @@
 
 function cyclicRotation(arr, rotation){
     //Your code here...
+    //pop the last array
+    //unshift to add it to the beginning
+    //loop to ratate it k number of times
+
+    for (var i = 0; i < rotation; i++){
+        var pop = arr.pop();
+        arr.unshift(pop);
+    }
+    return arr;
 }
+var data = cyclicRotation([3, 8, 9, 7, 6], 3)
+console.log(data);

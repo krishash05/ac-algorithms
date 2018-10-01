@@ -7,8 +7,18 @@
 
 // Check out Arithmetic Operators https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators
 
-function factorializeIt(num) {
-  //your code here
-}
 
-factorializeIt(5);
+function factorializeIt(num) {
+  if ( num === 0 || num === 1){
+   return 1;}
+    if ( num > 1){
+      var fact = 1
+      for(var i = 1; i<=num; i++){
+        fact *= i
+      }
+  return fact
+    }
+};
+
+var poo = factorializeIt(5);
+console.log(poo);

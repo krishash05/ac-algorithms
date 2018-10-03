@@ -26,5 +26,16 @@ console.log(result) // "1-3"
 **/
 
 function dashInsert(str) {
-	// Your code
-}
+	var arrayNumbers = str.split("");
+	var newString = "";
+	for (var i = 0; i < arrayNumbers.length; i++){
+		if (arrayNumbers[i]%2 === 1 && arrayNumbers[i+1]%2 === 1){
+			newString = newString + arrayNumbers[i] + "-";
+		} else{
+			newString = newString + arrayNumbers[i];
+		}
+	}
+	return newString;
+}	
+ var result = dashInsert("4457981");
+ console.log(dashInsert);

@@ -31,4 +31,17 @@ console.log(result) // "oH, hELLO!!"
 
 function swapCase(str) {
 	// Your code
+	var newString = "";
+	var charArray = str.split("");
+	for (var i = 0;  i<charArray.length; i++){
+		if (charArray[i] === charArray[i].toUpperCase()){
+			newString = newString + charArray[i].toLowerCase();
+		}else {
+			newString = newString + charArray[i].toUpperCase();
+		}
+	}
+	return newString;	
+
 }
+var result = swapCase("McDonalds");
+console.log(result);

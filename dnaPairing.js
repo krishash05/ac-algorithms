@@ -10,11 +10,32 @@
 
 //The character and its pair are paired up in an array, and all the arrays are grouped into one encapsulating array.
 
+//input string
+//output nested array
+
 function pairElement(str) {
-  //your code here
+  var dna = str.split('')
+  var array = [];
+  for (var i = 0; i < dna.length; i++){
+    if (dna[i].toUpperCase() === "C"){
+      var basePair = ["C", "G"];
+      array.push(basePair);
+    } else if (dna[i].toUpperCase() === "G"){
+      var basePair = ["G", "C"];
+      array.push(basePair);
+    } else if (dna[i].toUpperCase() === "A"){
+      var basePair = ["A", "T"];
+      array.push(basePair);
+    } else {
+      var basePair = ["T", "A"];
+      array.push(basePair);
+    }
+  }
+  return array
 }
 
-pairElement("GCG");
+var element = pairElement("GCG");
+console.log(element);
 
 //TEST CASES
 //pairElement("ATCGA") should return [["A","T"],["T","A"],["C","G"],["G","C"],["A","T"]].
